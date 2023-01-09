@@ -49,7 +49,7 @@ pipeline {
 
         stage('Stage-9 : Deployment - Deploy a Artifact staragile-1.0.0-SNAPSHOT.war file to Tomcat Server') { 
             steps {
-                sh 'curl -u admin:redhat@123 -T target/**.war "http://18.232.185.184/:8080/manager/text/deploy?path=/staragile&update=true"'
+                sh 'curl -u admin:redhat@123 -T target/**.war "http://18.232.185.184:8080/manager/text/deploy?path=/staragile&update=true"'
             }
         } 
         /*
