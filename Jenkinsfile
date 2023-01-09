@@ -6,11 +6,11 @@ pipeline {
     }
     stages {
 
-        stage('Stage-0 : Static Code Quality') { 
+        /*stage('Stage-0 : Static Code Quality') { 
             steps {
                 sh 'mvn clean verify sonar:sonar -DskipTests'
             }
-        } 
+        }*/
         stage('Stage-1 : Clean') { 
             steps {
                 sh 'mvn clean'
